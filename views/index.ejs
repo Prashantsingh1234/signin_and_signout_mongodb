@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="bg-zinc-900 w-full h-screen flex items-center justify-center text-white"
+    >
+      <form
+        action="/signup"
+        method="post"
+        class="bg-zinc-800 p-6 rounded-lg shadow-lg w-full max-w-sm"
+      >
+        <h2 class="text-xl font-bold mb-4">Create New User</h2>
+        <div class="flex flex-col gap-3">
+          <div class="flex flex-col">
+            <label for="name" class="mb-1">Name</label>
+            <input
+              id="name"
+              class="bg-zinc-700 text-white rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+              type="text"
+              placeholder="Name"
+              name="Name"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label for="username" class="mb-1">Username</label>
+            <input
+              id="username"
+              class="bg-zinc-700 text-white rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+              type="text"
+              placeholder="Username"
+              name="Username"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label for="email" class="mb-1">Email</label>
+            <input
+              id="email"
+              class="bg-zinc-700 text-white rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+              type="email"
+              placeholder="Email"
+              name="Email"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label for="password" class="mb-1">Password</label>
+            <input
+              id="password"
+              class="bg-zinc-700 text-white rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+              type="password"
+              placeholder="Password"
+              name="Password"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label for="age" class="mb-1">Age</label>
+            <input
+              id="age"
+              class="bg-zinc-700 text-white rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-blue-500"
+              type="number"
+              placeholder="Age"
+              name="Age"
+            />
+          </div>
+          <button
+            class="bg-blue-600 hover:bg-blue-700 rounded-lg px-4 py-2 mt-3 transition duration-300"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
